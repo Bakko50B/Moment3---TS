@@ -1,0 +1,15 @@
+p {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #585858;
+        font-size: 1.5rem;
+        transition: .5s;
+
+        &:hover {
+            color: #0f0000;
+        }
+
+    }
+}
