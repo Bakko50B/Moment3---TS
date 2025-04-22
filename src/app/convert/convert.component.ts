@@ -16,28 +16,28 @@ export class ConvertComponent {
 
   convertToMeter(): void {
     this.conversionText = ''; // Reset conversion text
-    let meter: number = this.valueToConvert; 
-    this.convertedValue = meter / 3.28084; 
-    this.conversionText = `Konverterade ${meter} fot till ${this.convertedValue.toFixed(3)} meter.`;
+    let feet: number = this.valueToConvert; 
+    this.convertedValue = feet / 3.28084; 
+    this.conversionText = `${feet} fot omvandlades till ${this.convertedValue.toFixed(3)} meter.`;
   }
   convertToFeet(): void {
     this.conversionText = ''; // Reset conversion text
-    let feet: number = this.valueToConvert;
-    this.convertedValue = feet * 3.28084;
-    this.conversionText = `Konverterade ${feet} meter till ${this.convertedValue.toFixed(3)} fot.`;
+    let meter: number = this.valueToConvert;
+    this.convertedValue = meter * 3.28084;
+    this.conversionText = `${meter} meter omvandlades till ${this.convertedValue.toFixed(3)} fot.`;
   }
 
   convertToFahrenheit(): void {
     this.conversionText = ''; // Reset conversion text
     let celsius: number = this.valueToConvert;
     this.convertedValue = (celsius * 9 / 5) + 32; 
-    this.conversionText = `Konverterade ${celsius} 🌡︎ Celsius till ${this.convertedValue.toFixed(3)} 🌡︎ Fahrenheit.`;
+    this.conversionText = `${celsius} 🌡︎ Celsius omvandlades till ${this.convertedValue.toFixed(3)} 🌡︎ Fahrenheit.`;
   }
 
   convertToCelsius(): void {
     this.conversionText = ''; // Reset conversion text
     let fahrenheit: number = this.valueToConvert;
     this.convertedValue = (fahrenheit - 32) * 5 / 9;
-    this.conversionText = `Konverterade ${fahrenheit} 🌡︎ Fahrenheit till ${this.convertedValue.toFixed(3)} 🌡︎ Celsius.`;
+    this.conversionText = `${fahrenheit} 🌡︎ Fahrenheit omvandlades till ${this.convertedValue.toFixed(3)} 🌡︎ Celsius.`;
   }
 }

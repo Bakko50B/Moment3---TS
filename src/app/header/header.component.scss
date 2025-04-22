@@ -47,3 +47,25 @@ header {
         }
     }
 }
+
+@media (max-width: 600px) {
+
+    header {
+        height: 3rem;
+        nav {
+            ul {
+                gap: 1rem;
+            }
+
+            li {
+                a {
+                    padding: 10px 20px;
+
+                    font-size: 1rem;
+
+
+                }
+            }
+        }
+    }
+}
