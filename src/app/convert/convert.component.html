@@ -1,1 +1,19 @@
-<h1>Konvertera</h1>
+<div id="description">
+    <h1>Konvertera</h1>
+    <p>Här kan du konvertera mellan fahrenheit och celsius, samt mellan meter och fot.
+        <br>Alla resultat visas med tre decimaler </p>
+</div>
+<div id="converter">
+    <label for="valuetoconvert">Värde att konvertera</label><br>
+    <input type="number" name="valuetoconvert" id="valuetoconvert" [(ngModel)]="valueToConvert"><br>
+    <button (click)="convertToCelsius()">Fahrenheit → Celsius</button><br>
+    <button (click)="convertToFahrenheit()">Celsius → Fahrenheit</button><br>
+    <button (click)="convertToFeet()">Meter → fot</button><br>
+    <button (click)="convertToMeter()">Fot → meter</button><br>
+    
+    <div>
+        <!-- <p> Konverterat värde: {{ convertedValue }}</p> -->
+        <p>&nbsp; {{ conversionText }}</p>
+    
+    </div>
+</div>
