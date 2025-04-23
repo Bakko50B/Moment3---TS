@@ -15,6 +15,8 @@
         binding ([ ]) och event binding (( )).<br>
         För att använda ngModel har jag importerat FormsModule till <code>convert.module.ts</code> som komponenten är kopplad till.
     </p>
+    <h3>Styling</h3>
+    <p>Jag har valt att jobba med scss-filer för styling. Det finns en övergripande styling, men den mesta stylingen är på komponentnivå.</p>
     <h3>Slutsats</h3>
     <p>Denna webbsida är min första med Angular som ramverk. Att jobba med Angular har varit kul och lärorikt. Det
         känns naturligt att skapa en webbsida med Angular.
@@ -29,7 +31,7 @@
         <h2>Bild(er)</h2>
         <p>Bilden som visas på sidan föreställer mig. Varje gång sidan laddas väljs en slumpmässig bild från en
             fördefinierad lista. Detta görs med hjälp av en metod i komponentens klass som genererar en slumpmässig
-            indexposition och hämtar motsvarande bild-URL ur arrayen. Resultatet? En ny bild visas vid varje besök!
+            indexposition och hämtar motsvarande bild-URL ur arrayen. En ny bild* visas vid varje besök!
             <br>
             För att optimera bildladdningen och prestandan använder jag <code>NgOptimizedImage</code>-direktivet
             tillsammans med
@@ -37,6 +39,8 @@
             bildstorlekar. Det förbättrar både
             laddningstider och användarupplevelse.
             <br><span>Varning!</span> Alla bilder har några år på nacken så det är en försköning av verkligheten!
+
         </p>
+        <p><cite>* Det är inte 100% säkert att så blir fallet då bilden slumpas fram.</cite></p>
     </div>
 </div>

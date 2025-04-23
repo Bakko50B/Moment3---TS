@@ -1,5 +1,5 @@
 .picturecontainer {
-    background-color: #cfcfcf;
+    background-color: whitesmoke;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -13,6 +13,10 @@
         margin-top: 10px;
         width: 50%;
         height: 100%;
+        transition: .5s;
+    }
+    img:hover{
+        border-radius: 50%;
     }
 
     p {
@@ -49,10 +53,13 @@
         font-size: 2em;
         margin-bottom: 20px;
     }
+    cite{
+        font-size: .8em;
+    }
 }
 
 .aboutcontainer {
-    background-color: #cfcfcf;
+    background-color: whitesmoke;
     width: 80%;
     margin: 0 auto;
 
