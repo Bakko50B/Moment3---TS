@@ -59,36 +59,50 @@
 }
 
 @media (max-width: 1200px) {
+    #description {
+        width: 90%;
+    }
+
     #converter {
         width: 90%;
         padding: 5px 1rem;
 
         label,
         input {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         div {
             font-size: 1rem;
         }
+
         button {
             font-size: 1rem;
         }
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
+    #description {
+        width: 100%;
+    }
+
     #converter {
         width: 100%;
         padding: 5px 1rem;
 
+        label{
+            margin-top: 2em;
+        }
         label,
         input {
-            font-size: 0.8em;
+            font-size: 1em;
         }
 
         div {
             font-size: 0.8rem;
         }
+
         button {
             font-size: 0.8rem;
         }
