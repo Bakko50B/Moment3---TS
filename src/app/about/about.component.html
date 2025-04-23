@@ -1,2 +1,42 @@
-<h1>Om</h1>
-<img ngSrc="images/DanielOHjalmar.jpg" alt="" width="400" height="400" class="about-image">   
+<h1>Om uppgiften</h1>
+<div class="aboutcontainer">
+    
+    
+    <h3>Lösning</h3>
+    <p>För att lösa uppgiften har jag läst läsanvisningarna och sett de videos som finns länkade på den sidan. <br>
+        För att visa bilder på sidan gav mig Mattias Dahlgren mig tipset att läsa på om <code>NgOptimizedImage</code>.
+        <br>
+        Om jag förstått det rätt så ger det en viss optimering av bilder och olika storlekar beroende på
+        skärmupplösning. Jag skulle gärna sett en möjlighet som det till exempel finns i Parcel med generering av olika
+        filtyper som ger bättre kvalité per kb.
+    </p>
+    <h3>Konvertering</h3>
+    <p>Sidan med konvertering skapades med tvåvägs-binding. Jag har använt <code>[(ngModel)]</code>, vilket kombinerar property
+        binding ([ ]) och event binding (( )).<br>
+        För att använda ngModel har jag importerat FormsModule till <code>convert.module.ts</code> som komponenten är kopplad till.
+    </p>
+    <h3>Slutsats</h3>
+    <p>Denna webbsida är min första med Angular som ramverk. Att jobba med Angular har varit kul och lärorikt. Det
+        känns naturligt att skapa en webbsida med Angular.
+    </p>
+    <hr>
+</div>
+
+<div class="picturecontainer">
+    <img ngSrc={{randomPicturePath}} alt="En bild på författaren" width="400" height="400" priority title="För att se en annan bild, ladda om sidan!" ngOptimizedImage>
+
+    <div>
+        <h2>Bild(er)</h2>
+        <p>Bilden som visas på sidan föreställer mig. Varje gång sidan laddas väljs en slumpmässig bild från en
+            fördefinierad lista. Detta görs med hjälp av en metod i komponentens klass som genererar en slumpmässig
+            indexposition och hämtar motsvarande bild-URL ur arrayen. Resultatet? En ny bild visas vid varje besök!
+            <br>
+            För att optimera bildladdningen och prestandan använder jag <code>NgOptimizedImage</code>-direktivet
+            tillsammans med
+            <code>ngSrc</code>. Det gör att Angular automatiskt hanterar lazy loading och och bättre hantering av
+            bildstorlekar. Det förbättrar både
+            laddningstider och användarupplevelse.
+            <br><span>Varning!</span> Alla bilder har några år på nacken så det är en försköning av verkligheten!
+        </p>
+    </div>
+</div>
