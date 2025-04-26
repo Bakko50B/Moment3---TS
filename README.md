@@ -30,3 +30,7 @@ Det framslumpade talet blir den "position" i arrayen vars url ska sättas till b
   
  Utvecklat i VSC med node.js och standarskommando för att skapa en nytt projekt.   
  * ng new projektnamn  
+
+# Författare
+Torbjörn Lundberg  
+tolu2403@student.miun.se
